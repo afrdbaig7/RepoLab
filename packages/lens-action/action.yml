@@ -1,0 +1,23 @@
+name: Lens static review
+description: Run an explicitly trusted installed Lens package against immutable PR commits
+inputs:
+  tool-package:
+    description: Absolute installed Lens package directory outside the target checkout; acquired by a trusted workflow
+    required: true
+  config:
+    description: Optional trusted config outside the target checkout
+    required: false
+outputs:
+  report-directory:
+    description: Directory containing validated JSON and offline HTML
+    value: ${{ steps.review.outputs.report-directory }}
+runs:
+  using: composite
+  steps:
+    - id: review
+      shell: bash
+      env:
+        LENS_ACTION_PATH: ${{ github.action_path }}
+        LENS_TOOL_PACKAGE: ${{ inputs.tool-package }}
+        LENS_TRUSTED_CONFIG: ${{ inputs.config }}
+      run: node "$LENS_ACTION_PATH/run.mjs"
