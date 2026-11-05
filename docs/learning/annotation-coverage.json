@@ -1,0 +1,1664 @@
+{
+  "schemaVersion": 1,
+  "sourceDigest": "d53d8283461d6fd3954ddbd5e19bc67c6c9bf867f37dbe9a7f4e9c0ab4ea2349",
+  "revision": null,
+  "dirtyWorktree": "Live Git revision/dirty status is captured when PDFs are built; the versioned inventory uses the source digest to avoid commit/digest cycles.",
+  "note": "Statement groups cover the main new engine/worker. File/test overviews and inherited RepoLab files remain explicit annotation gaps; inventory coverage is not complete teaching coverage. PDF output is excluded from source digests.",
+  "counts": {
+    "annotation-gap": 44,
+    "configuration-overview": 12,
+    "file-overview": 15,
+    "generated-origin": 2,
+    "learning-or-reference-source": 32,
+    "statement-groups": 14,
+    "test-overview": 13
+  },
+  "entries": [
+    {
+      "path": ".gitattributes",
+      "digest": "8ed33bf4e2c9bc16463a9b93525daf6b17dbf3f1a58d1a7f554e38af78e08b59",
+      "lines": 4,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug.md",
+      "digest": null,
+      "lines": 14,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "digest": null,
+      "lines": 9,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "digest": "10dcb8face220ca74d9b844529bf26247611acc825854da1db70084743a291a1",
+      "lines": 14,
+      "status": "configuration-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "digest": "734136d61139f945c2bbef569b7398caaf8b13a7cedbe3e3fa2a2ae9e02a0005",
+      "lines": 41,
+      "status": "configuration-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": ".gitignore",
+      "digest": "7a9ff73b47941cf19df4190044fa52f33de24bd2cf3fa699ad5d0b34f1e624e3",
+      "lines": 17,
+      "status": "configuration-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "CHANGELOG.md",
+      "digest": null,
+      "lines": 17,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "digest": null,
+      "lines": 7,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "digest": null,
+      "lines": 16,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "Cargo.lock",
+      "digest": "900fe73eecf1c70ac5e43e48bb7e432e8d45c87908133fba160586e733b94137",
+      "lines": 212,
+      "status": "generated-origin",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "Cargo.toml",
+      "digest": "44e199e46d767231b22c6cc85370ff98b671694d6ed3d79003ee7210df4437df",
+      "lines": 15,
+      "status": "configuration-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "LICENSE",
+      "digest": "07becb07391143ce6ea9326c224e4e9a923e5eaa8d2bc3b3f088c5fa04f6175e",
+      "lines": 21,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "README.md",
+      "digest": null,
+      "lines": 78,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "SECURITY.md",
+      "digest": null,
+      "lines": 14,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "apps/cli/package.json",
+      "digest": "15daf69334d03f4409a11b5407df8515734aa3198f3048b131c4920053bffb04",
+      "lines": 20,
+      "status": "annotation-gap",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "apps/cli/src/index.ts",
+      "digest": "f4f049ec4b1d39542bf3f2b2f69c965e9a1df4038eb88c3921b17438e65b60e8",
+      "lines": 123,
+      "status": "annotation-gap",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "apps/cli/test/cli.test.ts",
+      "digest": "89984032f5f76ac57f2755705e8ea655e4c0807926c6ec18b3a1886b8787b859",
+      "lines": 18,
+      "status": "annotation-gap",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "apps/cli/tsconfig.json",
+      "digest": "8ad8b8a1fe13988d6e86d76a7dd1b841f69a867359f6679c1911b8abbc992e52",
+      "lines": 5,
+      "status": "annotation-gap",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "apps/control/package.json",
+      "digest": "696237f86aeec6492c83e0c7edf06b239b92c943d42a0848404cb33192e4d287",
+      "lines": 22,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "apps/control/src/server.ts",
+      "digest": "d9ed2a8b057cb11b989b3bd7b363878aa4e4a57e74e433dd73a6b5be293b639e",
+      "lines": 81,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "apps/control/src/ui.ts",
+      "digest": "6e36f5bafbd20bbdc5c66a65fb81c21f73f8f1a58d9c7a8abe26351d55e2756b",
+      "lines": 23,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "apps/control/test/server.test.ts",
+      "digest": "a45857c8d7a38159e08d248bcf1e339c26e4480ae51d1e32e1b44bb44f67ee62",
+      "lines": 92,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "apps/control/tsconfig.json",
+      "digest": "8ad8b8a1fe13988d6e86d76a7dd1b841f69a867359f6679c1911b8abbc992e52",
+      "lines": 5,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "benchmarks/public-prs.json",
+      "digest": "093b34d0870890cfb335353aef41b532428ebe31e4852e5abb76e876117c8077",
+      "lines": 35,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "crates/snapshot-worker/Cargo.toml",
+      "digest": "bae004aabe8f809443c8f158e4f2d55ddd14c9cc0aa803d859f29c599bb18cb1",
+      "lines": 12,
+      "status": "annotation-gap",
+      "chapter": "chapters/02-worker.md",
+      "ranges": []
+    },
+    {
+      "path": "crates/snapshot-worker/src/main.rs",
+      "digest": "acb1f73aac7f5296cb341342f1f331bc829518dd79e43515038cd4cfbf42f60f",
+      "lines": 501,
+      "status": "statement-groups",
+      "chapter": "chapters/02-worker.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "#![forbid",
+          "explanation": "Unsafe code is forbidden. Imports name the wire traits, digest implementation, owned buffers, paths, process handles, threads and clocks. Constants bound snapshots, files and tracked entries before allocations grow unbounded.",
+          "endLine": 15
+        },
+        {
+          "startLine": 16,
+          "marker": "#[derive(Debug",
+          "explanation": "Error is an enum: invalid contract/resource state, I/O or JSON failure. thiserror provides Display and From conversions so ? preserves failure without fabricating success. Borrowed static messages avoid leaking source or credentials.",
+          "endLine": 25
+        },
+        {
+          "startLine": 26,
+          "marker": "#[derive(Deserialize)]",
+          "explanation": "Request owns strings; deny_unknown_fields rejects unknown keys and camelCase aligns Rust fields with TS JSON. Serialize structs describe commits, bounded file metadata, exclusions and the combined manifest. Integration tests validate actual emitted messages against the TS/JSON contract.",
+          "endLine": 78
+        },
+        {
+          "startLine": 79,
+          "marker": "fn git(",
+          "explanation": "git borrows repo/argument strings and owns input bytes for its writer thread. Command launches Git directly. Clearing environment and selectively restoring OS process requirements prevents inherited GIT_* variables redirecting analysis.",
+          "endLine": 81
+        },
+        {
+          "startLine": 82,
+          "marker": "    command",
+          "explanation": "Fixed config/environment disables system/global config, prompts, replacement objects, lazy fetch, fsmonitor and hooks. Arguments are separate values, not shell interpolation. All three standard streams are piped.",
+          "endLine": 110
+        },
+        {
+          "startLine": 111,
+          "marker": "    let mut child",
+          "explanation": "Owned pipe handles move out of Child into concurrent threads. Each reader stores at most its bound plus one overflow byte. The writer consumes the owned input Vec and then closes stdin.",
+          "endLine": 135
+        },
+        {
+          "startLine": 136,
+          "marker": "    let started",
+          "explanation": "Polling try_wait distinguishes completion from the 10-second deadline. Timeout kills and waits the child. A brief sleep avoids a busy loop. Joining readers/writer returns their errors and bytes after the process has ended.",
+          "endLine": 156
+        },
+        {
+          "startLine": 157,
+          "marker": "    if status.is_none()",
+          "explanation": "Timeout, output overflow, nonzero exit and writer failure become errors. Stderr content is not reflected as raw terminal text. Only successful bounded stdout returns to the caller.",
+          "endLine": 171
+        },
+        {
+          "startLine": 172,
+          "marker": "fn resolve_commit",
+          "explanation": "References are length/control checked and resolved with rev-parse --verify --end-of-options plus ^{commit}. Returned text must be a supported hex commit ID. Option-looking names cannot become Git options.",
+          "endLine": 192
+        },
+        {
+          "startLine": 193,
+          "marker": "fn safe_path",
+          "explanation": "Relative normal components are required. Parent/absolute/drive/backslash paths fail. Unusual UTF-8 names, spaces and newlines can remain metadata because target path names are never used as storage paths.",
+          "endLine": 204
+        },
+        {
+          "startLine": 205,
+          "marker": "fn snapshot(",
+          "explanation": "ls-tree uses full-tree recursive NUL records and sizes. Every tracked entry counts toward the bound. Metadata and UTF-8 paths are validated before supported files enter the batch.",
+          "endLine": 238
+        },
+        {
+          "startLine": 239,
+          "marker": "        let reason",
+          "explanation": "Symlinks, submodules, generated/vendor and unsupported extensions become counted diagnostics. Supported blobs must satisfy per-file and shared-pair byte bounds. Checked addition prevents integer overflow.",
+          "endLine": 284
+        },
+        {
+          "startLine": 285,
+          "marker": "    entries.sort_by",
+          "explanation": "Deterministic path sorting fixes manifest order. All object IDs for one revision are written to a single cat-file --batch subprocess. Headers must match expected object/type/size before checked slices borrow blob bytes.",
+          "endLine": 314
+        },
+        {
+          "startLine": 315,
+          "marker": "        if content.contains",
+          "explanation": "Binary/invalid-UTF-8/LFS content is excluded visibly. SHA-256 yields a safe storage filename. Existing files must be regular, non-symlink and byte-identical; otherwise create_new prevents overwriting anything unexpected.",
+          "endLine": 351
+        },
+        {
+          "startLine": 352,
+          "marker": "    if !remaining.is_empty()",
+          "explanation": "Trailing batch output is a protocol error. Returning files transfers owned metadata; borrowed content slices end with the output Vec. No syntax/rule decision occurs in Rust.",
+          "endLine": 357
+        },
+        {
+          "startLine": 358,
+          "marker": "fn run(",
+          "explanation": "run borrows Request and validates operation/version/policy, empty absolute output directory and repo bounds. It resolves both commits; PR mode requires a unique merge base, exact mode selects the base tip. Shared mutable accounting spans both snapshot reads.",
+          "endLine": 434
+        },
+        {
+          "startLine": 435,
+          "marker": "fn main()",
+          "explanation": "main handles a bounded complete request or --version, retains the ID, and serializes exactly one result/error with completion signaling. Error exit is 2. Root ownership stays in TS; Rust never executes target code or modifies its working tree.",
+          "endLine": 477
+        },
+        {
+          "startLine": 478,
+          "marker": "#[cfg(test)]",
+          "explanation": "Native tests cover unsafe path rejection, unusual-path acceptance and request shape failures. Real Git/protocol integration lives in Vitest so it crosses the shipped process boundary instead of only exercising Rust helpers.",
+          "endLine": 501
+        }
+      ]
+    },
+    {
+      "path": "docs/adr/0001-local-first-boundaries.md",
+      "digest": null,
+      "lines": 13,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/architecture.md",
+      "digest": null,
+      "lines": 18,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/architecture/lens.md",
+      "digest": null,
+      "lines": 34,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/decisions/0002-lens-snapshot-boundary.md",
+      "digest": null,
+      "lines": 31,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/02-worker.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/evidence-model.md",
+      "digest": null,
+      "lines": 10,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/getting-started.md",
+      "digest": null,
+      "lines": 14,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/handoff.md",
+      "digest": null,
+      "lines": 34,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/learning/chapters/01-fixtures.md",
+      "digest": null,
+      "lines": 61,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/learning/chapters/02-worker.md",
+      "digest": null,
+      "lines": 64,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/learning/chapters/03-reports-and-delivery.md",
+      "digest": null,
+      "lines": 88,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/learning/chapters/04-projects-and-provenance.md",
+      "digest": null,
+      "lines": 121,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/learning/concept-index.md",
+      "digest": null,
+      "lines": 20,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/learning/guide.md",
+      "digest": null,
+      "lines": 150,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/learning/index.md",
+      "digest": null,
+      "lines": 25,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/lens-gap-assessment.md",
+      "digest": null,
+      "lines": 28,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/lens-support.md",
+      "digest": null,
+      "lines": 125,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/maintenance/accomplishments.md",
+      "digest": null,
+      "lines": 24,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/maintenance/action.md",
+      "digest": null,
+      "lines": 28,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/maintenance/release.md",
+      "digest": null,
+      "lines": 66,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/manifest.md",
+      "digest": null,
+      "lines": 7,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/progress.md",
+      "digest": null,
+      "lines": 104,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/runner-protocol.md",
+      "digest": null,
+      "lines": 7,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/runner-security.md",
+      "digest": null,
+      "lines": 5,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "docs/scenario-worker.md",
+      "digest": null,
+      "lines": 5,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "fixtures/lens/cases.json",
+      "digest": "30d6e87e8ba3d1f177aed4aec9fed3b9ab32dd6aeffaa93f8cfd3fc04b441659",
+      "lines": 16,
+      "status": "configuration-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "package.json",
+      "digest": "cebc3c2e96a5b5dc8bb39861d5a4c0968a9dc8070978ce35617e6fc08b445f1f",
+      "lines": 36,
+      "status": "configuration-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/analyzer/package.json",
+      "digest": "639569c73825c053d6993aadf2da26594165e82a254e2ec9dead4bfccd04e446",
+      "lines": 18,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/analyzer/src/index.ts",
+      "digest": "2f7f0a61e8b17080b80c7edda7e505739f3c5f82ac7c4d1d0209321c3d5c44b2",
+      "lines": 209,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/analyzer/test/analyzer.test.ts",
+      "digest": "c20afdb4779d79d4a0baf0a0caa258715d510bfbe6bb142abfd678c3cdeb5f19",
+      "lines": 51,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/analyzer/tsconfig.json",
+      "digest": "8ad8b8a1fe13988d6e86d76a7dd1b841f69a867359f6679c1911b8abbc992e52",
+      "lines": 5,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/contracts/package.json",
+      "digest": "106f82c6cfc0aaaf80c2b78b11efcde3b724c36ad4051d3762179ce9c342102d",
+      "lines": 18,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/contracts/protocol.schema.json",
+      "digest": "930598822bc7c29bd02afaef73ba8ee871924d917617f767aa0f61c213f7aafd",
+      "lines": 15,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/contracts/src/index.ts",
+      "digest": "9390f375504252f0bb058b4b4732850e9699b681efd73a3af951ad288c75a045",
+      "lines": 219,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/contracts/test/manifest.test.ts",
+      "digest": "f4b58513fbe25a0b025241deb42e125cf97da66270674cd454982e1eab780ac7",
+      "lines": 39,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/contracts/tsconfig.json",
+      "digest": "8ad8b8a1fe13988d6e86d76a7dd1b841f69a867359f6679c1911b8abbc992e52",
+      "lines": 5,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens-action/action.yml",
+      "digest": "793e69ea380325c9e45327b766b607db251d83e034d6d5ad160ad9f2af792630",
+      "lines": 23,
+      "status": "configuration-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens-action/run.mjs",
+      "digest": "0d445d2ab6f2287d43c817d6631e23c141fbee630f0bab12b893366d53bdefd8",
+      "lines": 46,
+      "status": "file-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/LICENSE",
+      "digest": "07becb07391143ce6ea9326c224e4e9a923e5eaa8d2bc3b3f088c5fa04f6175e",
+      "lines": 21,
+      "status": "configuration-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/README.md",
+      "digest": null,
+      "lines": 38,
+      "status": "learning-or-reference-source",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/package.json",
+      "digest": "2b4ac8855175c4739d5fb62bdc14a9c7d0e71016c8b3efddd5f1caca30bddd40",
+      "lines": 22,
+      "status": "configuration-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/src/analysis-worker.ts",
+      "digest": "75392b0c1d2b5863bfa54a7dc4c76f8f77ff76acaf0a471b69f6d666dff14ce1",
+      "lines": 11,
+      "status": "statement-groups",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "import",
+          "explanation": "The trusted worker imports the same engine, artifact logic and pinned-library loader. The parent supplies AnalysisInput as structured data; no target module is imported.",
+          "endLine": 6
+        },
+        {
+          "startLine": 7,
+          "marker": "const input",
+          "explanation": "The worker performs project extraction/comparison, optional artifact metadata checks, enforces a serialized report-size bound and posts one completed report. The parent independently validates it and enforces deadline/cancellation.",
+          "endLine": 11
+        }
+      ]
+    },
+    {
+      "path": "packages/lens/src/analysis.ts",
+      "digest": "a7002665dfa8de1d7099434d7535854c91b7ac9d2a6635e057a4c6e5aa0190e8",
+      "lines": 53,
+      "status": "statement-groups",
+      "chapter": "chapters/04-projects-and-provenance.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "import",
+          "explanation": "The orchestrator owns one semantic worker and a typed snapshot/config/artifact input. Worker communication uses structured cloning; report validation still happens at the receiving boundary.",
+          "endLine": 12
+        },
+        {
+          "startLine": 13,
+          "marker": "export async function runAnalysis",
+          "explanation": "Already-canceled work and excessive snapshot/artifact input fail before a worker is created. The compiled trusted module receives captured strings only, with explicit V8 heap/stack limits, no inherited preload arguments, and cleared NODE_OPTIONS.",
+          "endLine": 23
+        },
+        {
+          "startLine": 24,
+          "marker": "    let result",
+          "explanation": "State distinguishes a received report from a settled Promise. Cleanup removes timers/listeners. Failure first marks settled, terminates the worker, then rejects after termination; merely rejecting a Promise would leave compiler work running.",
+          "endLine": 35
+        },
+        {
+          "startLine": 36,
+          "marker": "    worker.on",
+          "explanation": "Exactly one validated report is accepted. Worker errors, nonzero/missing-result exits, deadlines and abort signals converge on owned cleanup. A clean exit resolves the previously validated result, so a partial unfinished worker never masquerades as analysis success.",
+          "endLine": 53
+        }
+      ]
+    },
+    {
+      "path": "packages/lens/src/artifacts.ts",
+      "digest": "0a44ee7f9377e6891b2bac0b2581da72594f063be5312b9be02f3de1245be844",
+      "lines": 47,
+      "status": "statement-groups",
+      "chapter": "chapters/04-projects-and-provenance.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "import",
+          "explanation": "Artifact processing is pure value/text comparison. The strict schema has exact version/kind, commit identities, config digest and a bounded file-digest map. It does not accept executable configuration or artifact claims of authenticated origin.",
+          "endLine": 12
+        },
+        {
+          "startLine": 13,
+          "marker": "export function expectedArtifact",
+          "explanation": "The expected metadata is derived from actual run commits/config and captured-head contents, sorted by normalized paths. This produces a reproducible context for an external producer without running any target test.",
+          "endLine": 21
+        },
+        {
+          "startLine": 22,
+          "marker": "export function attachTestArtifact",
+          "explanation": "The 64 KiB bound precedes JSON parsing. Supplied and actual fields are compared; a cloned report preserves the caller's original value. Consistent claims remain unverified/partial and excluded from trusted associations.",
+          "endLine": 31
+        },
+        {
+          "startLine": 32,
+          "marker": "  if (mismatches.length)",
+          "explanation": "A mismatch captures exact original artifact text and derived expected context with distinct evidence methods and logical metadata paths. SHA identities bind the difference. EVIDENCE001 states what disagrees while preserving the separate unauthenticated-origin limitation.",
+          "endLine": 42
+        },
+        {
+          "startLine": 43,
+          "marker": "  result.findings.sort",
+          "explanation": "Sorted findings/changes/diagnostics preserve determinism, and reportSchema validates the final public value. Malformed artifacts fail rather than becoming a successful report with zero findings.",
+          "endLine": 47
+        }
+      ]
+    },
+    {
+      "path": "packages/lens/src/cli.ts",
+      "digest": "8b0d7df8d969d02d2a4be5915dc8cae147a44df8e25ea84b9583d5432bea504e",
+      "lines": 87,
+      "status": "file-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/src/compare.ts",
+      "digest": "54bae992f3e94253a4babf5dc04b6643b111dc5ecbbcb4e68da122dc9598b280",
+      "lines": 118,
+      "status": "statement-groups",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "import",
+          "explanation": "Comparison depends on values and path normalization only. The limitations array states exactly what observations cannot establish; it becomes public report data rather than hidden README-only knowledge.",
+          "endLine": 15
+        },
+        {
+          "startLine": 16,
+          "marker": "function targetPath",
+          "explanation": "Relative imported module text is normalized against the test directory and matched only against captured paths. This narrow static resolver supports ordinary TS/JS-style relative imports, not re-export graphs or tsconfig aliases.",
+          "endLine": 20
+        },
+        {
+          "startLine": 21,
+          "marker": "export function compareFiles",
+          "explanation": "Runtime config is parsed first. Before/after captured strings become independent fact sets. Run metadata records versions, config digest, comparison and diagnostics without timestamps so repeated payloads remain deterministic.",
+          "endLine": 32
+        },
+        {
+          "startLine": 33,
+          "marker": "  const pairs",
+          "explanation": "File pairs prefer exact paths. For a missing path, only a unique identical-content candidate proves a narrow rename. Unmatched additions/deletions/moves stay partial. There is no speculative structural identity score.",
+          "endLine": 44
+        },
+        {
+          "startLine": 45,
+          "marker": "  const testPairs",
+          "explanation": "Unique scoped test titles pair within matched files. Missing or duplicate candidates emit uncertainty instead of manufacturing a removal finding. The test relationship can exist even when a test's assertions change.",
+          "endLine": 51
+        },
+        {
+          "startLine": 52,
+          "marker": "  const emit",
+          "explanation": "Stable identity hashes include rule, scope, source ranges and digests. A Change and Finding are distinct records. Guard strength is heuristic, review priority is separate, and every finding includes limitations and a next inspection step.",
+          "endLine": 56
+        },
+        {
+          "startLine": 57,
+          "marker": "  for (const pair of pairs)",
+          "explanation": "Unique matched exported functions compare parameter objects and explicit return text. Annotation presence changes become context diagnostics. Configured guard-set disappearance creates an observation, not a claim that authorization broke.",
+          "endLine": 78
+        },
+        {
+          "startLine": 79,
+          "marker": "    for (const old of pair.before.interfaces)",
+          "explanation": "A supported matched interface field only fires TYPE001 when it was required and becomes optional. Missing or already-optional properties do not satisfy that rule.",
+          "endLine": 89
+        },
+        {
+          "startLine": 90,
+          "marker": "  for (const pair of testPairs)",
+          "explanation": "Matched active tests becoming skip/todo fire TEST002. Ordered assertion excerpt sequences detect additions/removals/edits with explicit textual limits. Reordering is observable but does not prove behavioral change.",
+          "endLine": 101
+        },
+        {
+          "startLine": 102,
+          "marker": "  const paths",
+          "explanation": "A changed function gains a related test through a resolved imported declaration or captured relative named-import binding reference. Related test finding IDs join the protection observation to exact before/after test evidence. Path aliases can resolve through the captured Project; this is static linkage, not execution attribution.",
+          "endLine": 113
+        },
+        {
+          "startLine": 114,
+          "marker": "  for (const key",
+          "explanation": "Stable IDs and diagnostics are sorted. Any diagnostic makes completeness partial. Final reportSchema.parse checks the assembled public boundary; malformed evidence cannot silently reach a renderer.",
+          "endLine": 118
+        }
+      ]
+    },
+    {
+      "path": "packages/lens/src/contracts.ts",
+      "digest": "4bdf472ad92656e6e5379518eda088d753a0ef514b3257fb97d27a6610c6d8c0",
+      "lines": 39,
+      "status": "statement-groups",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "import",
+          "explanation": "Node crypto computes content identity; Zod validates actual runtime values. Types alone vanish after compilation. Callers are extraction, comparison, CLI and the worker adapter; invalid boundary data throws before analysis.",
+          "endLine": 4
+        },
+        {
+          "startLine": 5,
+          "marker": "export const version",
+          "explanation": "The version literal binds reports and packaged workers. SHA-256 returns a stable hex identity. The rule catalogue lists only implemented rules; its literal keys prevent inventing unsupported IDs in Finding values.",
+          "endLine": 16
+        },
+        {
+          "startLine": 17,
+          "marker": "export const configSchema",
+          "explanation": "Strict config accepts only version and bounded guard text names, with an empty default. parse supplies runtime defaults; the inferred Config type follows the validator instead of duplicating its shape.",
+          "endLine": 18
+        },
+        {
+          "startLine": 19,
+          "marker": "const sha",
+          "explanation": "Commit IDs accept supported Git SHA lengths. Repository path refinement rejects absolute, parent, empty and backslash components. These conditions add filesystem semantics beyond generated structural JSON Schema.",
+          "endLine": 20
+        },
+        {
+          "startLine": 21,
+          "marker": "export const evidenceSchema",
+          "explanation": "Evidence retains exact revision, normalized path, one-based coordinates, bounded excerpt, AST method and digest. If these fields were optional, a finding could claim evidence that cannot be located or checked.",
+          "endLine": 22
+        },
+        {
+          "startLine": 23,
+          "marker": "export const symbolSchema",
+          "explanation": "Symbol and Change remain separate from Finding. Matching method describes how identity was carried across versions; ambiguity is explicit. Finding stores review priority separately from structural/heuristic strength and records related-test method and limitations.",
+          "endLine": 25
+        },
+        {
+          "startLine": 26,
+          "marker": "export const comparisonSchema",
+          "explanation": "The run contract records requested refs, resolved commits and actual comparison base. Diagnostics describe partial stages. reportSchema rejects another schema/tool/compiler version instead of guessing compatibility.",
+          "endLine": 31
+        },
+        {
+          "startLine": 32,
+          "marker": "export const fileSchema",
+          "explanation": "Manifest files are bounded and digest-named. The worker request has a literal version/operation and bounded parameters. The result/error discriminated union requires completion signaling and a nonretryable structured failure. snapshot.ts tests this cross-language boundary.",
+          "endLine": 39
+        }
+      ]
+    },
+    {
+      "path": "packages/lens/src/extract.ts",
+      "digest": "05d1dabadc94f7f01da8a0d5a17e9b6ed456a8192b0bd7eda9b0d09a32b6b98b",
+      "lines": 163,
+      "status": "statement-groups",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "import",
+          "explanation": "The adapter depends only on the pinned compiler and contracts; no filesystem or target module is imported. Fact interfaces model syntax, tests and evidence as ordinary values for pure comparison.",
+          "endLine": 12
+        },
+        {
+          "startLine": 13,
+          "marker": "export function extract",
+          "explanation": "SourceFile parses the supplied captured string, with TSX selected explicitly. The evidence closure converts compiler UTF-16 offsets to one-based line/column coordinates and hashes the original string. It caps display excerpts while retaining full ranges.",
+          "endLine": 23
+        },
+        {
+          "startLine": 24,
+          "marker": "  const host",
+          "explanation": "The fixture fallback CompilerHost exposes only this captured SourceFile. The real review path instead supplies its captured multi-file Project. Both hosts reject emitting output and cannot fall back to today's checkout. Program supplies diagnostics and a binder; that isolation fixes the original provenance defect.",
+          "endLine": 41
+        },
+        {
+          "startLine": 42,
+          "marker": "  const checker",
+          "explanation": "The binder supplies symbol identity. Named imports map local aliases to module/export names and symbols. This allows a later reference to persist to be distinguished from a shadowed local persist without claiming full project resolution.",
+          "endLine": 55
+        },
+        {
+          "startLine": 56,
+          "marker": "  const exports",
+          "explanation": "Modifier checks narrow the initial exported-function contract. Recursive walking visits syntax children. The function list is top-level, avoiding accidental pairing of unrelated nested declarations.",
+          "endLine": 58
+        },
+        {
+          "startLine": 59,
+          "marker": "  for (const node of functions)",
+          "explanation": "Unsupported overload/generic/destructured/generator declarations emit diagnostics. Guard traversal skips nested functions so an uncalled helper is not counted as outer protection. Stored parameter/default/rest/annotation values are later compared textually.",
+          "endLine": 97
+        },
+        {
+          "startLine": 98,
+          "marker": "  for (const node of source.statements)",
+          "explanation": "Simple exported interfaces store identifier-property optional flags and source evidence. Generic/inherited/merged forms remain unsupported. Other export forms generate diagnostics rather than pretending the initial API contract covers them.",
+          "endLine": 112
+        },
+        {
+          "startLine": 113,
+          "marker": "  const isFramework",
+          "explanation": "Only named imports from the declared framework modules are recognized. collectTests walks direct test expressions and nested describe blocks, builds scoped literal titles, and requires supported skip/todo/block-callback syntax.",
+          "endLine": 137
+        },
+        {
+          "startLine": 138,
+          "marker": "      const assertions",
+          "explanation": "The callback walk records references only when the bound symbol is the import. Assertion chains must root at the imported expect and end in the supported matcher family. Each assertion retains its own evidence; unsupported matchers are visible diagnostics.",
+          "endLine": 159
+        },
+        {
+          "startLine": 160,
+          "marker": "  collectTests",
+          "explanation": "Duplicate scoped titles create ambiguity diagnostics. Returning Facts keeps extraction separate from rules and rendering. Fixture, alias, Unicode and boundary tests verify this adapter's contract.",
+          "endLine": 163
+        }
+      ]
+    },
+    {
+      "path": "packages/lens/src/index.ts",
+      "digest": "7975367e15a6e07bb23e5248add3bdbf295d91fb3ad2c4e9f8956d6bdd9947bd",
+      "lines": 6,
+      "status": "file-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/src/io.ts",
+      "digest": "f075797b1d185f625bb2122c4af2d978338ec8e76f3baaa2877f3c07b7d7579e",
+      "lines": 24,
+      "status": "statement-groups",
+      "chapter": "chapters/04-projects-and-provenance.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "import",
+          "explanation": "File handles provide bounded local I/O without invoking a shell or target code.",
+          "endLine": 2
+        },
+        {
+          "startLine": 3,
+          "marker": "export async function readBoundedFile",
+          "explanation": "Opening before checking handle metadata avoids trusting only a previous path stat. Regular-file/type and size checks happen before chunk allocation. Reading at most limit+1 detects growth; only initialized byte slices are retained. finally closes the handle on every ordinary failure.",
+          "endLine": 21
+        },
+        {
+          "startLine": 22,
+          "marker": "export async function readBoundedText",
+          "explanation": "Strict UTF-8 decoding rejects malformed input instead of silently replacing bytes. Config, artifact, compiler library and snapshot adapters choose distinct documented limits at their call sites.",
+          "endLine": 24
+        }
+      ]
+    },
+    {
+      "path": "packages/lens/src/libraries.ts",
+      "digest": "dc2c67f542b6e356ca019828a14d3a9fe0b2538c68b59e3a5331137ff29eaa4f",
+      "lines": 21,
+      "status": "statement-groups",
+      "chapter": "chapters/04-projects-and-provenance.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "import",
+          "explanation": "This I/O adapter loads the pinned tool-owned TypeScript declarations separately from pure project construction. It never points to target node_modules or target configuration.",
+          "endLine": 7
+        },
+        {
+          "startLine": 8,
+          "marker": "export async function loadTrustedLibraries",
+          "explanation": "The compiler's own library directory is the trust source. Names are restricted to lib*.d.ts, sorted, checked for regular non-symlink files and bounded by file/aggregate size. Bounded strict text reads create plain strings for the virtual host; no declaration is executed.",
+          "endLine": 21
+        }
+      ]
+    },
+    {
+      "path": "packages/lens/src/links.ts",
+      "digest": "3e0435a28782ff1bb5b2455c54254260244a8be2e24db04e55f7d723a4e1d78c",
+      "lines": 9,
+      "status": "statement-groups",
+      "chapter": "chapters/04-projects-and-provenance.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "export const repositoryUrlPattern",
+          "explanation": "Only explicit HTTPS GitHub owner/repository roots are accepted. Generated source URLs must use an exact commit and a line anchor; userinfo, arbitrary hosts and executable schemes are rejected.",
+          "endLine": 3
+        },
+        {
+          "startLine": 4,
+          "marker": "export function sourceUrl",
+          "explanation": "Without a trusted origin or valid full SHA, no link is invented. Each path segment uses RFC3986-safe percent encoding, including parentheses/quotes that could escape Markdown. End-exclusive ranges ending at column 1 stop at the previous line. Evidence before/after already supplies base/head SHA respectively.",
+          "endLine": 9
+        }
+      ]
+    },
+    {
+      "path": "packages/lens/src/project.ts",
+      "digest": "ee42451796960830a3c205fca1390c61b004a70d0f13fff63de658f7f0160cce",
+      "lines": 90,
+      "status": "statement-groups",
+      "chapter": "chapters/04-projects-and-provenance.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "import",
+          "explanation": "The pure project builder depends on compiler data and path normalization only. Project exposes Program, captured sources, diagnostics and a source-to-repository path mapping; library strings arrive explicitly from the caller.",
+          "endLine": 16
+        },
+        {
+          "startLine": 17,
+          "marker": "export function createProject",
+          "explanation": "An untested compiler version fails rather than being mislabeled 5.8.3. Captured source and trusted standard declarations occupy different virtual roots. All reads normalize to map keys, so no missing source can fall through to the working tree.",
+          "endLine": 25
+        },
+        {
+          "startLine": 26,
+          "marker": "  const configHost",
+          "explanation": "Config parsing accepts only files inside the captured root. readDirectory enumerates captured TS context, not disk. Default NodeNext/ES2022 options give a documented initial resolution policy before a root captured config overrides supported options.",
+          "endLine": 35
+        },
+        {
+          "startLine": 36,
+          "marker": "  const configPath",
+          "explanation": "Root tsconfig parsing follows captured relative extends and reports missing/outside configuration. References are diagnosed rather than built/merged; plugins are diagnosed and never loaded. Before and after use their respective config snapshots.",
+          "endLine": 48
+        },
+        {
+          "startLine": 49,
+          "marker": "  // Source enumeration",
+          "explanation": "Analysis always disables emit, incremental state and plugins. Source enumeration comes from the snapshot contract, not tsconfig include/exclude. Virtual directory membership makes ordinary compiler module resolution work without filesystem traversal.",
+          "endLine": 57
+        },
+        {
+          "startLine": 58,
+          "marker": "  const host",
+          "explanation": "getSourceFile parses only strings present in the bounded map, caching source nodes within this Program. Default library selection follows compiler options inside the trusted virtual library root. writeFile always fails; canonical path, directory and realpath operations remain virtual.",
+          "endLine": 74
+        },
+        {
+          "startLine": 75,
+          "marker": "  const roots",
+          "explanation": "Only captured TS-family source files are roots. Program resolves modules using this host, then captured sources are indexed back to normalized repository paths. Missing imports/re-exports and compiler options become completeness diagnostics rather than fabricated semantic context.",
+          "endLine": 90
+        }
+      ]
+    },
+    {
+      "path": "packages/lens/src/render.ts",
+      "digest": "191fe3924617c2ec98c1aec14b451c83b5304c2948ee24eeb6ff5c5422044543",
+      "lines": 126,
+      "status": "statement-groups",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "import",
+          "explanation": "Renderers consume already validated Report values and never read target files, start a process or rerun rules. Evidence is typed to retain exact source locations.",
+          "endLine": 3
+        },
+        {
+          "startLine": 4,
+          "marker": "export function display",
+          "explanation": "Control and bidi characters become visible Unicode escapes before terminal/workflow display. This prevents source paths or reasons from rewriting lines or injecting screen-control sequences.",
+          "endLine": 8
+        },
+        {
+          "startLine": 9,
+          "marker": "function escapeHtml",
+          "explanation": "HTML metacharacters become entities. This primitive does not decide whitespace policy: metadata first uses display, while source excerpts intentionally retain normal line breaks.",
+          "endLine": 14
+        },
+        {
+          "startLine": 15,
+          "marker": "const htmlText",
+          "explanation": "Metadata, revision/path location text and Markdown each use their own encoding context. Markdown metacharacters cannot create attacker-chosen links or raw HTML.",
+          "endLine": 20
+        },
+        {
+          "startLine": 21,
+          "marker": "function terminal",
+          "explanation": "The terminal renderer lists priority, evidence strength and both revision locations, then static test methods and a bounded diagnostic preview. It always retains the no-findings-does-not-mean-safe limitation.",
+          "endLine": 40
+        },
+        {
+          "startLine": 41,
+          "marker": "function markdown",
+          "explanation": "Workflow summaries use escaped text sections over the same findings. Exact before/after locations and relationship methods are preserved without repository-supplied executable markup or links.",
+          "endLine": 59
+        },
+        {
+          "startLine": 60,
+          "marker": "function excerpt",
+          "explanation": "Source code keeps newline structure for reading while other controls/bidi text become visible data. Escaping follows normalization, so a source closing tag cannot escape its code element.",
+          "endLine": 70
+        },
+        {
+          "startLine": 71,
+          "marker": "function html",
+          "explanation": "Each finding becomes an article with paired evidence and native keyboard-accessible test disclosure. The static template supplies responsive columns, visible focus, inline styles and restrictive CSP, with no scripts or network assets. Metadata and source enter only escaped placeholders.",
+          "endLine": 118
+        },
+        {
+          "startLine": 119,
+          "marker": "export function render",
+          "explanation": "The public renderer dispatches from one immutable report to JSON/terminal/Markdown/HTML. JSON.stringify preserves original data through JSON escaping; display encoders are never reused to corrupt the underlying report.",
+          "endLine": 126
+        }
+      ]
+    },
+    {
+      "path": "packages/lens/src/schema.ts",
+      "digest": "de29f6e867e2a2e489bbb8e000aa43b6a617d5fa519da5db8f1bd36f3ea249c9",
+      "lines": 16,
+      "status": "file-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/src/snapshot.ts",
+      "digest": "496daabb1453026effb773777df7fea1aee88eb16f6db99ec354ff460f5e5df6",
+      "lines": 123,
+      "status": "statement-groups",
+      "chapter": "chapters/02-worker.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "import",
+          "explanation": "Node owns process and temporary-resource orchestration; Ajv and Zod validate the wire contract. The 16 MiB response and 64 KiB stderr limits are independent of the 8 KiB request bound.",
+          "endLine": 16
+        },
+        {
+          "startLine": 17,
+          "marker": "export function workerPath",
+          "explanation": "Default worker paths are package-local and platform-specific. LENS_WORKER is an explicit trusted developer override. No target checkout executable or floating download is selected automatically.",
+          "endLine": 20
+        },
+        {
+          "startLine": 21,
+          "marker": "export async function verifyPackagedWorker",
+          "explanation": "Installed metadata pins binary version, protocol, platform and digest. File type/size/hash checks detect substitution or corruption. The trusted package archive supplies authenticity; the checksum itself does not prove publisher identity.",
+          "endLine": 27
+        },
+        {
+          "startLine": 28,
+          "marker": "async function killTree",
+          "explanation": "Cancellation targets the owned process group on Unix and attempts taskkill /T on Windows. A restricted-session fallback kills the direct child. Tests exercise timeout/cancellation; full descendant guarantees remain a documented platform limit.",
+          "endLine": 38
+        },
+        {
+          "startLine": 39,
+          "marker": "export async function invokeWorker",
+          "explanation": "The request is parsed/serialized/bounded before spawn. An already-aborted signal prevents launching work. The worker is launched directly with pipes and shell=false; protocol input is data, never shell text.",
+          "endLine": 47
+        },
+        {
+          "startLine": 48,
+          "marker": "    const chunks",
+          "explanation": "Chunks arrive independently of JSON framing. Accumulation, total counters and deadline track bounded untrusted output. The first failure is preserved while owned child cleanup proceeds.",
+          "endLine": 59
+        },
+        {
+          "startLine": 60,
+          "marker": "    child.stdout",
+          "explanation": "Both streams are consumed concurrently. Overflow terminates work; stderr is never forwarded raw. Abort listeners and timers are removed when the process ends, preventing stale callbacks after a run.",
+          "endLine": 70
+        },
+        {
+          "startLine": 71,
+          "marker": "    child.once(\"close\"",
+          "explanation": "close occurs after stdio closes. The decoder rejects invalid UTF-8, missing newline and extra frames. Ajv/Zod, ID matching, exit status and requested-policy/ref checks must all succeed before the manifest resolves.",
+          "endLine": 92
+        },
+        {
+          "startLine": 93,
+          "marker": "export async function capture",
+          "explanation": "capture owns a scoped temporary directory and resolves the explicit repository root. The real worker receives that empty directory; the returned manifest never chooses a new root.",
+          "endLine": 100
+        },
+        {
+          "startLine": 101,
+          "marker": "    const read",
+          "explanation": "Each entry must have a unique normalized path, regular non-symlink storage file, expected bounded size, root-contained realpath and matching digest. Strict UTF-8 decoding creates InputFile values for the requested revision.",
+          "endLine": 116
+        },
+        {
+          "startLine": 117,
+          "marker": "    const before",
+          "explanation": "Base/head strings are fully captured before finally removes the directory. Cleanup runs for normal success and errors/cancellation. A hard host crash still needs future scavenging; it is not described as verified cleanup.",
+          "endLine": 123
+        }
+      ]
+    },
+    {
+      "path": "packages/lens/src/trusted-git.ts",
+      "digest": "7af984a57ca7beaf29991a636898e44e75e04241d22c5ce4e4e9c328cc11a427",
+      "lines": 35,
+      "status": "statement-groups",
+      "chapter": "chapters/04-projects-and-provenance.md",
+      "ranges": [
+        {
+          "startLine": 1,
+          "marker": "import",
+          "explanation": "Executable discovery uses filesystem metadata and path operations without executing any candidate. This is separate from immutable object reading.",
+          "endLine": 4
+        },
+        {
+          "startLine": 5,
+          "marker": "function within",
+          "explanation": "Path-relative containment checks distinguish a target child from a sibling with a similar prefix, including Windows drive boundaries.",
+          "endLine": 9
+        },
+        {
+          "startLine": 10,
+          "marker": "async function inCheckout",
+          "explanation": "Walking candidate ancestors detects source checkout .git files/directories. Unreadable candidates are rejected conservatively. No repository script is run to discover this fact.",
+          "endLine": 20
+        },
+        {
+          "startLine": 21,
+          "marker": "export async function resolveTrustedGit",
+          "explanation": "Only absolute PATH entries are considered; target and source-checkout candidates are skipped. realpath resolves symlinks before checks, regular/executable metadata is required, and the actual absolute tool path is sent to Rust. This prevents current-directory or repo PATH git.exe from becoming target execution. Absence produces an actionable error, never a local fallback.",
+          "endLine": 35
+        }
+      ]
+    },
+    {
+      "path": "packages/lens/test/action.test.ts",
+      "digest": "8b99abc6257a7a069604a4afb6615de4f8e55af530a3997657ab8da9ce8640c0",
+      "lines": 27,
+      "status": "test-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/test/analysis.test.ts",
+      "digest": "8251536ba57825d1fbba7464547d1e98b637555b7b5c633ca05eaffc43875528",
+      "lines": 20,
+      "status": "test-overview",
+      "chapter": "chapters/04-projects-and-provenance.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/test/artifacts.test.ts",
+      "digest": "3238f4a28cb0ef0efad1eadc9fb699614c3858635196f3b0a731d3b1bb8dab86",
+      "lines": 35,
+      "status": "test-overview",
+      "chapter": "chapters/04-projects-and-provenance.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/test/cli.test.ts",
+      "digest": "9e37ea3333c67c6d759dd07d422bfe0356ee09a8eee63564f78232aaf10c717c",
+      "lines": 43,
+      "status": "test-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/test/fake-worker.mjs",
+      "digest": "12fabe779d095cf12e6f8680590cfe5d7fee08ccec413c48a4138b5384e9dc98",
+      "lines": 20,
+      "status": "test-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/test/fixtures.test.ts",
+      "digest": "957a87890e2699bdc8b6f8092efb7e9ca106f2928ca6c72898cc5cd94aec137d",
+      "lines": 91,
+      "status": "test-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/test/git.test.ts",
+      "digest": "ce358a23c9a7d5f0f03b681359e2a8b30713b535a8081a9f69f2c0bb2f046280",
+      "lines": 133,
+      "status": "test-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/test/io.test.ts",
+      "digest": "08b5250c51cb1bc3aa9ce828b01a0be9cd5250d93de96e83be812c5931dca246",
+      "lines": 21,
+      "status": "test-overview",
+      "chapter": "chapters/04-projects-and-provenance.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/test/links.test.ts",
+      "digest": "87c64ebe8cd2706165a51454558e858ae6d9d459348066821c9e5654cfbe5b6f",
+      "lines": 21,
+      "status": "test-overview",
+      "chapter": "chapters/04-projects-and-provenance.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/test/project.test.ts",
+      "digest": "20485f0f5d42cb6f5a36b470874b3ed6ee461f92e5d828c1369a59d8a0b795fd",
+      "lines": 60,
+      "status": "test-overview",
+      "chapter": "chapters/04-projects-and-provenance.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/test/protocol.test.ts",
+      "digest": "ff07e62ebc4af1d753d75f73d0d8ea9d6e25ba0c9d76f9d1d1f2bb2abb39a144",
+      "lines": 32,
+      "status": "test-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/test/render.test.ts",
+      "digest": "9895c112bab33febc654609230db223727053c8eaebce4a80fa60dc11c00f89c",
+      "lines": 26,
+      "status": "test-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/test/trusted-git.test.ts",
+      "digest": "d0c8ca85c54f5bb1e5674a60a54fc69ccbac9247dd613b11b4dd689400c49fbd",
+      "lines": 22,
+      "status": "test-overview",
+      "chapter": "chapters/04-projects-and-provenance.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/lens/tsconfig.json",
+      "digest": "8ad8b8a1fe13988d6e86d76a7dd1b841f69a867359f6679c1911b8abbc992e52",
+      "lines": 5,
+      "status": "configuration-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/reports/package.json",
+      "digest": "ec597d71f553164d73aa1f3698b905722ef01f22a371d0c5b6539edbc3ceacc0",
+      "lines": 15,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/reports/src/index.ts",
+      "digest": "5f1042df3fed669f4bc5dc339f97db0085c4044b1bd051961d97f3dd8b2ad482",
+      "lines": 36,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/reports/test/report.test.ts",
+      "digest": "9aa20c43f79af4243642e094b07ce1e6f9e6dd5bd7a65790a015b1413c636145",
+      "lines": 12,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/reports/tsconfig.json",
+      "digest": "8ad8b8a1fe13988d6e86d76a7dd1b841f69a867359f6679c1911b8abbc992e52",
+      "lines": 5,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/runner-client/package.json",
+      "digest": "bb7ccf9f86a148290b21718e4e7324b943665a69f257c50d02cf00735ee4be21",
+      "lines": 15,
+      "status": "annotation-gap",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/runner-client/src/index.ts",
+      "digest": "84af717d48324f68cb2de78e0194ce23fecc76f472c3839562e3901649beb917",
+      "lines": 89,
+      "status": "annotation-gap",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/runner-client/test/client.test.ts",
+      "digest": "7f5bf7948b6018615dd3d80d60047ad725f3664e87f5239db28b89f304d04ab5",
+      "lines": 8,
+      "status": "annotation-gap",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/runner-client/tsconfig.json",
+      "digest": "8ad8b8a1fe13988d6e86d76a7dd1b841f69a867359f6679c1911b8abbc992e52",
+      "lines": 5,
+      "status": "annotation-gap",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/scenarios/package.json",
+      "digest": "dae64e1bbd13d50ce9b6a58af12591299d812fc59de1eb6b5efaa26beb4ac0ad",
+      "lines": 15,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/scenarios/src/index.ts",
+      "digest": "5e56eed0e3673c348776f3cf6ffa1e16fc9b636ead0538c11f84d65c74116f7b",
+      "lines": 91,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/scenarios/test/assertions.test.ts",
+      "digest": "3e67fc1f3ade675bdd9c85ec7b4f631e1a6149dbd3eb8cc93d8a9e2e70e4e008",
+      "lines": 23,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/scenarios/tsconfig.json",
+      "digest": "8ad8b8a1fe13988d6e86d76a7dd1b841f69a867359f6679c1911b8abbc992e52",
+      "lines": 5,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/storage/package.json",
+      "digest": "eab888857d368f9cf7ea800c04b1e48cb684ea8ebb9c096e5f608a86e003353f",
+      "lines": 18,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/storage/src/index.ts",
+      "digest": "775a98c0fc2e1fc5c079e4a24b717a78f8e423718ef4ca7c5dcabbcf1613dbc0",
+      "lines": 250,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/storage/test/storage.test.ts",
+      "digest": "57f77a797b8e9452ea5da83f41bb781ff2fcdb40a9aecc7a4248b2ae03c24b34",
+      "lines": 38,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "packages/storage/tsconfig.json",
+      "digest": "8ad8b8a1fe13988d6e86d76a7dd1b841f69a867359f6679c1911b8abbc992e52",
+      "lines": 5,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "digest": "3068b91006b60cae123a8ef14563ff92716a6bb7a621e71fecbd6e203ae0f77f",
+      "lines": 1493,
+      "status": "generated-origin",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "digest": "bba0cb23a3f4edc60d4627b6dd94d7bdf57e7d3cc579f2ffacb239e6db06a826",
+      "lines": 8,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "runner/cmd/repolab-runner/main.go",
+      "digest": "3744857ea46a858cab77b7d17e05bd0b04b609cf59a954d2402d0ca0f26194a2",
+      "lines": 69,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "runner/internal/protocol/messages.go",
+      "digest": "e8073dfffa9c734bca865b50196268e2a53ca3853295413e942a647757db834f",
+      "lines": 89,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "runner/internal/supervisor/supervisor.go",
+      "digest": "5bf0da012f0ebdc59aa77e025f4d273275b3144f72c08b264918d100864e0042",
+      "lines": 61,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "digest": "b8a3c46eaed8ee287ad81b8b53687d4c5ff0369aa5bb585f708da371712e245d",
+      "lines": 4,
+      "status": "configuration-overview",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    },
+    {
+      "path": "scripts/check-format.mjs",
+      "digest": "87693607922c9b0e4de0dfef540c5393a3ccd54de807c0ad13d65a47c6e766c0",
+      "lines": 23,
+      "status": "annotation-gap",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "scripts/demo.mjs",
+      "digest": "9c9bc267be81592bd1603d13151ed9837664a2366cc34af41f514e42bf848146",
+      "lines": 49,
+      "status": "file-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "scripts/evaluate-public.mjs",
+      "digest": "916dcb987a60b0a6996125304c1825ce690a273a508c8afc5018420def4eb72d",
+      "lines": 52,
+      "status": "file-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "scripts/learning-docs/annotations.mjs",
+      "digest": "6274ebb5faa55dc33aeff5b15a7249d6ceb753d563186112e18c490a19670c7a",
+      "lines": 148,
+      "status": "file-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "scripts/learning-docs/build.py",
+      "digest": "43d4d4392c73b3c12ad16744ee6fb5621e1c026b835b6811957d0ca73df6d65c",
+      "lines": 197,
+      "status": "file-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "scripts/learning-docs/coverage.mjs",
+      "digest": "2b5ce7828ef68fe667c4c0455ffa6ab096aeac595435e43388b4a490ac42b647",
+      "lines": 71,
+      "status": "file-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "scripts/learning-docs/pdf.mjs",
+      "digest": "37fda1ff77570e5dc98d2a7f56bbc3f2b6828160e87b28f5ff09119e2a8621e1",
+      "lines": 11,
+      "status": "file-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "scripts/learning-docs/requirements.txt",
+      "digest": "1fc29b0e4c5a3b1d89d22a294bf8904c88d17d6e1c8cb8fac111e46b0cc85f86",
+      "lines": 4,
+      "status": "configuration-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "scripts/lens.mjs",
+      "digest": "03c239f32f39d9e7e8e803a4fc6667446e78e7f6dfd4246b19279031ec51cc10",
+      "lines": 3,
+      "status": "file-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "scripts/package-smoke.mjs",
+      "digest": "6e13cbe89491a363eb00b8f132d643c1ec01f6d114de6cf77df03547dc9fd199",
+      "lines": 49,
+      "status": "file-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "scripts/release-inventory.mjs",
+      "digest": "4ff8a1033bec4386a720a54ae830ba3ef0b961e484a93ad998a3a4ca335931d9",
+      "lines": 45,
+      "status": "file-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "scripts/stage-package.mjs",
+      "digest": "b7c8f40b532ed8b018c293eeb7120f8c0ae74dafb1264143520d55b3bed4bd54",
+      "lines": 14,
+      "status": "file-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "scripts/verify.mjs",
+      "digest": "2e2d80b11fbc7fbd3ed0f0bd6ac1f95aeccc0e755bc0c369e3715c6beca654d6",
+      "lines": 30,
+      "status": "file-overview",
+      "chapter": "chapters/03-reports-and-delivery.md",
+      "ranges": []
+    },
+    {
+      "path": "tsconfig.json",
+      "digest": "e8c949536a16ab749035c2c6ca9706307d1734400e54c9424f61fdb0bc15d1a9",
+      "lines": 16,
+      "status": "annotation-gap",
+      "chapter": "chapters/01-fixtures.md",
+      "ranges": []
+    }
+  ]
+}

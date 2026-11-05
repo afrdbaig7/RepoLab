@@ -22,7 +22,10 @@
     "package:stage": "cargo build --release --locked && node scripts/stage-package.mjs",
     "package:smoke": "node scripts/package-smoke.mjs",
     "release:inventory": "node scripts/release-inventory.mjs",
-    "release:prepare": "node scripts/package-smoke.mjs && node scripts/release-inventory.mjs"
+    "release:prepare": "node scripts/package-smoke.mjs && node scripts/release-inventory.mjs",
+    "verify": "node scripts/verify.mjs",
+    "learning:check": "node scripts/learning-docs/coverage.mjs --check",
+    "learning:pdf": "node scripts/learning-docs/pdf.mjs"
   },
   "devDependencies": {
     "@types/node": "22.15.30",

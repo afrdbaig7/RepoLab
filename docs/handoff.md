@@ -1,5 +1,22 @@
 # Handoff
 
+## Controlling Lens direction - 2026-11-05
+
+The Lens implementation is in packages/lens, crates/snapshot-worker and
+packages/lens-action. Eight scoped rule IDs, snapshot-isolated project context,
+bounded/cancelable analysis, four report views and Windows packaging exist.
+Use pnpm verify, then pnpm release:prepare and pnpm learning:pdf. See progress.md
+for executed results and honest remaining gates; source explanations/digests live
+under docs/learning. Local Git is initialized on main.
+
+Repository: https://github.com/afrdbaig7/RepoLab.git . On 2026-11-05 the user
+authorized focused conventional commits and the initial source push, superseding
+the earlier hold. Do not claim hosted checks passed until their runs complete.
+Package/release publishing remains separate. Existing RepoLab/Go features are preserved;
+Lens does not depend on them or Docker.
+
+## Preserved earlier RepoLab handoff
+
 ## Goal
 
 Build the local-first RepoLab v1 described in the production build brief.
