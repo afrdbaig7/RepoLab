@@ -1,0 +1,16 @@
+{
+  "dataset": "frozen-original-seeded-v1",
+  "license": "MIT; original Lens workspace fixture, not third-party source",
+  "config": { "schemaVersion": 1, "guards": ["requireOwner"] },
+  "before": {
+    "api.ts": "export interface User { owner: string; }\nexport function save(id: string): string { requireOwner(); return id; }\n",
+    "api.test.ts": "import { it, expect } from 'vitest';\nimport { save as persist } from './api';\nit('rejects a non-owner', () => { expect(persist('x')).toThrow(); });\n"
+  },
+  "after": {
+    "api.ts": "export interface User { owner?: string; }\nexport function save(id?: string): number { return 1; }\n",
+    "api.test.ts": "import { it, expect } from 'vitest';\nimport { save as persist } from './api';\nit.skip('rejects a non-owner', () => { persist('x'); });\n"
+  },
+  "expected": ["API001", "API002", "GUARD001", "TEST001", "TEST002", "TYPE001"],
+  "refactor": { "replace": "return id;", "with": "return id.trim();", "expected": [] },
+  "rationale": "Controlled changes exercise supported structural observations. The body-only refactor preserves the signature, configured guard and assertions. These labels do not establish vulnerability detection or external precision."
+}

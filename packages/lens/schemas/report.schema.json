@@ -1,0 +1,776 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "run": {
+      "type": "object",
+      "properties": {
+        "toolVersion": {
+          "type": "string",
+          "const": "0.1.0"
+        },
+        "compilerVersion": {
+          "type": "string",
+          "const": "5.8.3"
+        },
+        "configDigest": {
+          "type": "string"
+        },
+        "comparison": {
+          "type": "object",
+          "properties": {
+            "requestedBase": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "requestedHead": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "resolvedBase": {
+              "type": "string",
+              "pattern": "^(?:[a-f0-9]{40}|[a-f0-9]{64})$"
+            },
+            "resolvedHead": {
+              "type": "string",
+              "pattern": "^(?:[a-f0-9]{40}|[a-f0-9]{64})$"
+            },
+            "comparisonBase": {
+              "type": "string",
+              "pattern": "^(?:[a-f0-9]{40}|[a-f0-9]{64})$"
+            },
+            "policy": {
+              "type": "string",
+              "enum": [
+                "pr",
+                "exact"
+              ]
+            }
+          },
+          "required": [
+            "requestedBase",
+            "requestedHead",
+            "resolvedBase",
+            "resolvedHead",
+            "comparisonBase",
+            "policy"
+          ],
+          "additionalProperties": false
+        },
+        "completeness": {
+          "type": "string",
+          "enum": [
+            "complete-within-supported-syntax",
+            "partial"
+          ]
+        },
+        "diagnostics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "stage": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "path": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "stage",
+              "message"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "unresolvedCalls": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "files": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "toolVersion",
+        "compilerVersion",
+        "configDigest",
+        "comparison",
+        "completeness",
+        "diagnostics",
+        "unresolvedCalls",
+        "files",
+        "bytes"
+      ],
+      "additionalProperties": false
+    },
+    "symbols": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "function",
+              "interface",
+              "test"
+            ]
+          },
+          "source": {
+            "type": "object",
+            "properties": {
+              "revision": {
+                "type": "string",
+                "minLength": 1
+              },
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "startLine": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "startColumn": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "endLine": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "endColumn": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "excerpt": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "method": {
+                "type": "string",
+                "enum": [
+                  "typescript-ast",
+                  "supplied-artifact",
+                  "derived-run-context"
+                ]
+              },
+              "fileDigest": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "url": {
+                "type": "string",
+                "pattern": "^https:\\/\\/github\\.com\\/[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+\\/blob\\/(?:[a-f0-9]{40}|[a-f0-9]{64})\\/[^\\s<>\"'()]+#L[1-9]\\d*(?:-L[1-9]\\d*)?$"
+              }
+            },
+            "required": [
+              "revision",
+              "path",
+              "startLine",
+              "startColumn",
+              "endLine",
+              "endColumn",
+              "excerpt",
+              "method",
+              "fileDigest"
+            ],
+            "additionalProperties": false
+          },
+          "matching": {
+            "type": "string",
+            "enum": [
+              "exact-path-and-name",
+              "identical-blob-rename"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "kind",
+          "source",
+          "matching"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "before": {
+            "type": "object",
+            "properties": {
+              "revision": {
+                "type": "string",
+                "minLength": 1
+              },
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "startLine": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "startColumn": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "endLine": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "endColumn": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "excerpt": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "method": {
+                "type": "string",
+                "enum": [
+                  "typescript-ast",
+                  "supplied-artifact",
+                  "derived-run-context"
+                ]
+              },
+              "fileDigest": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "url": {
+                "type": "string",
+                "pattern": "^https:\\/\\/github\\.com\\/[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+\\/blob\\/(?:[a-f0-9]{40}|[a-f0-9]{64})\\/[^\\s<>\"'()]+#L[1-9]\\d*(?:-L[1-9]\\d*)?$"
+              }
+            },
+            "required": [
+              "revision",
+              "path",
+              "startLine",
+              "startColumn",
+              "endLine",
+              "endColumn",
+              "excerpt",
+              "method",
+              "fileDigest"
+            ],
+            "additionalProperties": false
+          },
+          "after": {
+            "type": "object",
+            "properties": {
+              "revision": {
+                "type": "string",
+                "minLength": 1
+              },
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "startLine": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "startColumn": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "endLine": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "endColumn": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "excerpt": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "method": {
+                "type": "string",
+                "enum": [
+                  "typescript-ast",
+                  "supplied-artifact",
+                  "derived-run-context"
+                ]
+              },
+              "fileDigest": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "url": {
+                "type": "string",
+                "pattern": "^https:\\/\\/github\\.com\\/[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+\\/blob\\/(?:[a-f0-9]{40}|[a-f0-9]{64})\\/[^\\s<>\"'()]+#L[1-9]\\d*(?:-L[1-9]\\d*)?$"
+              }
+            },
+            "required": [
+              "revision",
+              "path",
+              "startLine",
+              "startColumn",
+              "endLine",
+              "endColumn",
+              "excerpt",
+              "method",
+              "fileDigest"
+            ],
+            "additionalProperties": false
+          },
+          "ambiguity": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "symbol",
+          "before",
+          "after",
+          "ambiguity"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "ruleId": {
+            "type": "string",
+            "enum": [
+              "API001",
+              "API002",
+              "TYPE001",
+              "GUARD001",
+              "TEST001",
+              "TEST002",
+              "CALL001",
+              "EVIDENCE001"
+            ]
+          },
+          "priority": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "strength": {
+            "type": "string",
+            "enum": [
+              "structural",
+              "heuristic"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "before": {
+            "type": "object",
+            "properties": {
+              "revision": {
+                "type": "string",
+                "minLength": 1
+              },
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "startLine": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "startColumn": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "endLine": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "endColumn": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "excerpt": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "method": {
+                "type": "string",
+                "enum": [
+                  "typescript-ast",
+                  "supplied-artifact",
+                  "derived-run-context"
+                ]
+              },
+              "fileDigest": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "url": {
+                "type": "string",
+                "pattern": "^https:\\/\\/github\\.com\\/[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+\\/blob\\/(?:[a-f0-9]{40}|[a-f0-9]{64})\\/[^\\s<>\"'()]+#L[1-9]\\d*(?:-L[1-9]\\d*)?$"
+              }
+            },
+            "required": [
+              "revision",
+              "path",
+              "startLine",
+              "startColumn",
+              "endLine",
+              "endColumn",
+              "excerpt",
+              "method",
+              "fileDigest"
+            ],
+            "additionalProperties": false
+          },
+          "after": {
+            "type": "object",
+            "properties": {
+              "revision": {
+                "type": "string",
+                "minLength": 1
+              },
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "startLine": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "startColumn": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "endLine": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "endColumn": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "excerpt": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "method": {
+                "type": "string",
+                "enum": [
+                  "typescript-ast",
+                  "supplied-artifact",
+                  "derived-run-context"
+                ]
+              },
+              "fileDigest": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "url": {
+                "type": "string",
+                "pattern": "^https:\\/\\/github\\.com\\/[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+\\/blob\\/(?:[a-f0-9]{40}|[a-f0-9]{64})\\/[^\\s<>\"'()]+#L[1-9]\\d*(?:-L[1-9]\\d*)?$"
+              }
+            },
+            "required": [
+              "revision",
+              "path",
+              "startLine",
+              "startColumn",
+              "endLine",
+              "endColumn",
+              "excerpt",
+              "method",
+              "fileDigest"
+            ],
+            "additionalProperties": false
+          },
+          "relatedTests": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "method": {
+                  "type": "string",
+                  "const": "static-import-reference"
+                },
+                "before": {
+                  "type": "object",
+                  "properties": {
+                    "revision": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "path": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 1000
+                    },
+                    "startLine": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "startColumn": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "endLine": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "endColumn": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "excerpt": {
+                      "type": "string",
+                      "maxLength": 12000
+                    },
+                    "method": {
+                      "type": "string",
+                      "enum": [
+                        "typescript-ast",
+                        "supplied-artifact",
+                        "derived-run-context"
+                      ]
+                    },
+                    "fileDigest": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "url": {
+                      "type": "string",
+                      "pattern": "^https:\\/\\/github\\.com\\/[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+\\/blob\\/(?:[a-f0-9]{40}|[a-f0-9]{64})\\/[^\\s<>\"'()]+#L[1-9]\\d*(?:-L[1-9]\\d*)?$"
+                    }
+                  },
+                  "required": [
+                    "revision",
+                    "path",
+                    "startLine",
+                    "startColumn",
+                    "endLine",
+                    "endColumn",
+                    "excerpt",
+                    "method",
+                    "fileDigest"
+                  ],
+                  "additionalProperties": false
+                },
+                "after": {
+                  "type": "object",
+                  "properties": {
+                    "revision": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "path": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 1000
+                    },
+                    "startLine": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "startColumn": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "endLine": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "endColumn": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "excerpt": {
+                      "type": "string",
+                      "maxLength": 12000
+                    },
+                    "method": {
+                      "type": "string",
+                      "enum": [
+                        "typescript-ast",
+                        "supplied-artifact",
+                        "derived-run-context"
+                      ]
+                    },
+                    "fileDigest": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "url": {
+                      "type": "string",
+                      "pattern": "^https:\\/\\/github\\.com\\/[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+\\/blob\\/(?:[a-f0-9]{40}|[a-f0-9]{64})\\/[^\\s<>\"'()]+#L[1-9]\\d*(?:-L[1-9]\\d*)?$"
+                    }
+                  },
+                  "required": [
+                    "revision",
+                    "path",
+                    "startLine",
+                    "startColumn",
+                    "endLine",
+                    "endColumn",
+                    "excerpt",
+                    "method",
+                    "fileDigest"
+                  ],
+                  "additionalProperties": false
+                },
+                "changes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "name",
+                "method",
+                "before",
+                "after",
+                "changes"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "next": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "symbol",
+          "ruleId",
+          "priority",
+          "strength",
+          "reason",
+          "before",
+          "after",
+          "relatedTests",
+          "limitations",
+          "next"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "run",
+    "symbols",
+    "changes",
+    "findings",
+    "limitations"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "protocolVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-f0-9-]{36}$"
+    },
+    "operation": {
+      "type": "string",
+      "const": "snapshot"
+    },
+    "repo": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "git": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "output": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "base": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "head": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "policy": {
+      "type": "string",
+      "enum": [
+        "pr",
+        "exact"
+      ]
+    }
+  },
+  "required": [
+    "protocolVersion",
+    "id",
+    "operation",
+    "repo",
+    "git",
+    "output",
+    "base",
+    "head",
+    "policy"
+  ],
+  "additionalProperties": false
+}

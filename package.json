@@ -14,7 +14,11 @@
     "test": "pnpm -r test",
     "dev:control": "pnpm --filter @repolab/control dev",
     "format:check": "node scripts/check-format.mjs",
-    "doctor": "pnpm --filter @repolab/cli build && node apps/cli/dist/index.js doctor"
+    "doctor": "pnpm --filter @repolab/cli build && node apps/cli/dist/index.js doctor",
+    "lens": "node scripts/lens.mjs",
+    "lens:build": "cargo build --locked && pnpm --filter @repolab/lens build",
+    "lens:demo": "node scripts/demo.mjs",
+    "package:stage": "cargo build --release --locked && node scripts/stage-package.mjs"
   },
   "devDependencies": {
     "@types/node": "22.15.30",

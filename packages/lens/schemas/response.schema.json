@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "anyOf": [
+    {
+      "type": "object",
+      "properties": {
+        "protocolVersion": {
+          "type": "number",
+          "const": 1
+        },
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "result"
+        },
+        "manifest": {
+          "type": "object",
+          "properties": {
+            "schemaVersion": {
+              "type": "number",
+              "const": 1
+            },
+            "comparison": {
+              "type": "object",
+              "properties": {
+                "requestedBase": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1000
+                },
+                "requestedHead": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1000
+                },
+                "resolvedBase": {
+                  "type": "string",
+                  "pattern": "^(?:[a-f0-9]{40}|[a-f0-9]{64})$"
+                },
+                "resolvedHead": {
+                  "type": "string",
+                  "pattern": "^(?:[a-f0-9]{40}|[a-f0-9]{64})$"
+                },
+                "comparisonBase": {
+                  "type": "string",
+                  "pattern": "^(?:[a-f0-9]{40}|[a-f0-9]{64})$"
+                },
+                "policy": {
+                  "type": "string",
+                  "enum": [
+                    "pr",
+                    "exact"
+                  ]
+                }
+              },
+              "required": [
+                "requestedBase",
+                "requestedHead",
+                "resolvedBase",
+                "resolvedHead",
+                "comparisonBase",
+                "policy"
+              ],
+              "additionalProperties": false
+            },
+            "before": {
+              "maxItems": 4000,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1000
+                  },
+                  "digest": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1048576
+                  },
+                  "storage": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}\\.txt$"
+                  }
+                },
+                "required": [
+                  "path",
+                  "digest",
+                  "bytes",
+                  "storage"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "after": {
+              "maxItems": 4000,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1000
+                  },
+                  "digest": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1048576
+                  },
+                  "storage": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}\\.txt$"
+                  }
+                },
+                "required": [
+                  "path",
+                  "digest",
+                  "bytes",
+                  "storage"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "diagnostics": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "string"
+                  },
+                  "stage": {
+                    "type": "string"
+                  },
+                  "message": {
+                    "type": "string"
+                  },
+                  "path": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "code",
+                  "stage",
+                  "message"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "totalBytes": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 33554432
+            }
+          },
+          "required": [
+            "schemaVersion",
+            "comparison",
+            "before",
+            "after",
+            "diagnostics",
+            "totalBytes"
+          ],
+          "additionalProperties": false
+        },
+        "complete": {
+          "type": "boolean",
+          "const": true
+        }
+      },
+      "required": [
+        "protocolVersion",
+        "id",
+        "type",
+        "manifest",
+        "complete"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "protocolVersion": {
+          "type": "number",
+          "const": 1
+        },
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "error"
+        },
+        "code": {
+          "type": "string"
+        },
+        "stage": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "retryable": {
+          "type": "boolean",
+          "const": false
+        },
+        "complete": {
+          "type": "boolean",
+          "const": true
+        }
+      },
+      "required": [
+        "protocolVersion",
+        "id",
+        "type",
+        "code",
+        "stage",
+        "message",
+        "retryable",
+        "complete"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}
