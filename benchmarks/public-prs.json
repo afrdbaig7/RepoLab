@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "frozenOn": "2026-11-05",
+  "repository": "https://github.com/honojs/hono.git",
+  "license": "MIT",
+  "attribution": "Yusuke Wada and Hono contributors; retain the license from each evaluated commit with generated reports",
+  "comparisonPolicy": "exact",
+  "cases": [
+    {
+      "id": "hono-3304",
+      "url": "https://github.com/honojs/hono/pull/3304",
+      "base": "95a6b39895f85243484debd8f055e83e7de317b9",
+      "head": "09d0bbf1b4d27b4304922bc796d11f193e0d4968",
+      "expectedRules": [],
+      "label": "scope-boundary",
+      "rationale": "Reviewed diff before engine execution: changed API is an exported arrow function, which is unsupported. Tests add new literal cases rather than edit supported assertions in an existing matched case. Expect no supported rule observations, with explicit partial diagnostics. This is not a claim that the changed API was unchanged or behavior equivalent."
+    },
+    {
+      "id": "hono-277",
+      "url": "https://github.com/honojs/hono/pull/277",
+      "base": "aa6807cfba026a1fe31520c9a5a6c9c6bc66a38b",
+      "head": "edea74f8fc7efaa983bd4cfebf45d3ff2a78e523",
+      "expectedRules": [],
+      "label": "scope-boundary",
+      "rationale": "Reviewed diff before engine execution: exported arrow middleware is outside API/guard/call extraction. Added assertion uses toBeNull, outside the initial matcher family. Expect no supported observations and partial diagnostics. This is a legitimate middleware rewrite, not a labeled vulnerability or supported positive."
+    }
+  ],
+  "limitations": [
+    "Two deliberately scoped public negatives do not establish broad false-positive rates.",
+    "There are no positive public-PR rule labels, so public precision/recall are undefined.",
+    "Controlled positive/refactor cases are separately labeled original MIT fixtures.",
+    "No human review-speed or correctness experiment has been conducted.",
+    "Do not tune exclusively to this reported set. Expand an independently labeled holdout before broad claims."
+  ]
+}

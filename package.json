@@ -18,7 +18,11 @@
     "lens": "node scripts/lens.mjs",
     "lens:build": "cargo build --locked && pnpm --filter @repolab/lens build",
     "lens:demo": "node scripts/demo.mjs",
-    "package:stage": "cargo build --release --locked && node scripts/stage-package.mjs"
+    "lens:evaluate-public": "node scripts/evaluate-public.mjs",
+    "package:stage": "cargo build --release --locked && node scripts/stage-package.mjs",
+    "package:smoke": "node scripts/package-smoke.mjs",
+    "release:inventory": "node scripts/release-inventory.mjs",
+    "release:prepare": "node scripts/package-smoke.mjs && node scripts/release-inventory.mjs"
   },
   "devDependencies": {
     "@types/node": "22.15.30",
