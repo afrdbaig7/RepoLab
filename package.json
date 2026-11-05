@@ -28,7 +28,7 @@
     "learning:pdf": "node scripts/learning-docs/pdf.mjs"
   },
   "devDependencies": {
-    "@types/node": "22.15.30",
+    "@types/node": "26.6.6",
     "typescript": "5.8.3",
     "vitest": "3.1.4"
   },
