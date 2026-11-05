@@ -1,0 +1,22 @@
+{
+  "name": "@repolab/control",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/server.js",
+  "types": "dist/server.d.ts",
+  "exports": { ".": "./dist/server.js" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "dev": "node --watch dist/server.js"
+  },
+  "dependencies": {
+    "@repolab/analyzer": "workspace:*",
+    "@repolab/contracts": "workspace:*",
+    "@repolab/runner-client": "workspace:*",
+    "@repolab/storage": "workspace:*",
+    "fastify": "5.4.0"
+  }
+}

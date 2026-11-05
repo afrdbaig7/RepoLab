@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://repolab.dev/schema/runner-protocol-v1.json",
+  "title": "RepoLab runner protocol v1",
+  "description": "The checked-in canonical summary is enforced by the strict TypeScript schema and mirrored by runner/internal/protocol.",
+  "type": "object",
+  "required": ["protocolVersion", "maxFrameBytes", "commands", "events"],
+  "properties": {
+    "protocolVersion": { "const": "1" },
+    "maxFrameBytes": { "const": 1048576 },
+    "commands": { "type": "array", "items": { "enum": ["capabilities", "prepare", "start", "apply_fault", "reset_faults", "collect", "cancel", "cleanup", "reconcile", "shutdown"] } },
+    "events": { "type": "array", "items": { "enum": ["accepted", "phase_changed", "resource_created", "readiness", "fault_applied", "artifact_ready", "cleanup_result", "completed", "failed"] } }
+  },
+  "additionalProperties": false
+}

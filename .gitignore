@@ -1,0 +1,17 @@
+node_modules/
+.pnpm-store/
+__pycache__/
+*.pyc
+dist/
+.data/
+.repolab/
+*.db
+*.db-shm
+*.db-wal
+.DS_Store
+coverage/
+.tools/
+target/
+output/
+tmp/
+packages/lens/bin/

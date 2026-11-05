@@ -1,0 +1,20 @@
+{
+  "name": "@repolab/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": { "repolab": "dist/index.js" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@repolab/analyzer": "workspace:*",
+    "@repolab/contracts": "workspace:*",
+    "@repolab/control": "workspace:*",
+    "@repolab/runner-client": "workspace:*",
+    "@repolab/storage": "workspace:*",
+    "yaml": "2.8.1"
+  }
+}
